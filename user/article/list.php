@@ -30,7 +30,10 @@ while (true){
 
     <div>
         <?php foreach ( $articles as $item) { ?>
-            번호 : <?=$item['id']?><br>
+            <?php
+            $detailUri = "detail.php?id=${item['id']}";
+            ?>
+            <a href="<?=$detailUri?>">번호 : <?=$item['id']?></a><br>
             작성 : <?=$item['regDate']?><br>
             수정 : <?=$item['updateDate']?><br>
             제목 : <?=$item['title']?><br>
