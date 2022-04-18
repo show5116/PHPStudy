@@ -20,7 +20,9 @@ $article =mysqli_fetch_assoc($rs);
 <body>
 <h1>게시물 보기</h1>
 <hr>
-
+<div>
+    <a href="list.php">리스트로 가기</a>
+</div>
 <div>
     번호 : <?=$article['id']?><br>
     작성 : <?=$article['regDate']?><br>

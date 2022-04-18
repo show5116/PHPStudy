@@ -26,8 +26,10 @@ while (true){
 </head>
 <body>
     <h1>게시물 리스트</h1>
+    <div>
+        <a href="write.php">글쓰기</a>
+    </div>
     <hr>
-
     <div>
         <?php foreach ( $articles as $item) { ?>
             <?php
